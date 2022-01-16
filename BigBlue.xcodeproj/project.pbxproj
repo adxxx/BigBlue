@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D94DF89A92704F7A1984F9D /* Pods_BigBlue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 120E72C13BF4E6E19B762084 /* Pods_BigBlue.framework */; };
 		6F7D2B532787E97A006C8312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D2B522787E97A006C8312 /* AppDelegate.swift */; };
 		6F7D2B552787E97A006C8312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D2B542787E97A006C8312 /* SceneDelegate.swift */; };
 		6F7D2B572787E97A006C8312 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D2B562787E97A006C8312 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		120E72C13BF4E6E19B762084 /* Pods_BigBlue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BigBlue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7D2B4F2787E97A006C8312 /* BigBlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigBlue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7D2B522787E97A006C8312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F7D2B542787E97A006C8312 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		6F7D2B5E2787E97B006C8312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F7D2B612787E97B006C8312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F7D2B632787E97B006C8312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB3004A2697324DBDBB29E83 /* Pods-BigBlue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBlue.debug.xcconfig"; path = "Target Support Files/Pods-BigBlue/Pods-BigBlue.debug.xcconfig"; sourceTree = "<group>"; };
+		F7B4B9B47A30D1D6FE28471B /* Pods-BigBlue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BigBlue.release.xcconfig"; path = "Target Support Files/Pods-BigBlue/Pods-BigBlue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D94DF89A92704F7A1984F9D /* Pods_BigBlue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		555192637CCAEDDD2C6D4281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB3004A2697324DBDBB29E83 /* Pods-BigBlue.debug.xcconfig */,
+				F7B4B9B47A30D1D6FE28471B /* Pods-BigBlue.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6F7D2B462787E979006C8312 = {
 			isa = PBXGroup;
 			children = (
 				6F7D2B512787E97A006C8312 /* BigBlue */,
 				6F7D2B502787E97A006C8312 /* Products */,
+				555192637CCAEDDD2C6D4281 /* Pods */,
+				85A56B7B141C47E3A843C2E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +87,14 @@
 			path = BigBlue;
 			sourceTree = "<group>";
 		};
+		85A56B7B141C47E3A843C2E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				120E72C13BF4E6E19B762084 /* Pods_BigBlue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F7D2B662787E97B006C8312 /* Build configuration list for PBXNativeTarget "BigBlue" */;
 			buildPhases = (
+				29655C612DEF7BAC2DA10A7E /* [CP] Check Pods Manifest.lock */,
 				6F7D2B4B2787E97A006C8312 /* Sources */,
 				6F7D2B4C2787E97A006C8312 /* Frameworks */,
 				6F7D2B4D2787E97A006C8312 /* Resources */,
+				AACB6B183795E81C136277A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29655C612DEF7BAC2DA10A7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BigBlue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AACB6B183795E81C136277A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BigBlue/Pods-BigBlue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BigBlue/Pods-BigBlue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BigBlue/Pods-BigBlue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F7D2B4B2787E97A006C8312 /* Sources */ = {
@@ -288,6 +357,7 @@
 		};
 		6F7D2B672787E97B006C8312 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3004A2697324DBDBB29E83 /* Pods-BigBlue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,9 +366,11 @@
 				DEVELOPMENT_TEAM = 65HTB5GD75;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BigBlue/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "大蓝书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,12 +382,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6F7D2B682787E97B006C8312 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B4B9B47A30D1D6FE28471B /* Pods-BigBlue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,9 +397,11 @@
 				DEVELOPMENT_TEAM = 65HTB5GD75;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BigBlue/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "大蓝书";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,7 +413,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
