@@ -7,5 +7,8 @@ target 'BigBlue' do
 
   # Pods for BigBlue
   pod 'XLPagerTabStrip', '~> 9.0'
-
+  pod 'CHTCollectionViewWaterfallLayout'
+  pod 'YPImagePicker'
+  
+  
 end

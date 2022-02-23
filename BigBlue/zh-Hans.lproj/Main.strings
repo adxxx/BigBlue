@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "关注的人的笔记页面"; ObjectID = "EMC-SU-utb"; */
+"EMC-SU-utb.text" = "关注的人的笔记页面";
+
+/* Class = "UITabBarItem"; title = "Shopping"; ObjectID = "J57-xw-dgO"; */
+"J57-xw-dgO.title" = "商城";
+
+/* Class = "UITabBarItem"; title = "Me"; ObjectID = "QgW-i8-EjN"; */
+"QgW-i8-EjN.title" = "我的";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "WM7-pf-Q20"; */
+"WM7-pf-Q20.title" = "首页";
+
+/* Class = "UITabBarItem"; title = "Post"; ObjectID = "otm-nY-Prf"; */
+"otm-nY-Prf.title" = "发布";
+
+/* Class = "UITabBarItem"; title = "Message"; ObjectID = "y0a-9M-ayK"; */
+"y0a-9M-ayK.title" = "消息";
+
+/* Class = "UILabel"; text = "（占位）"; ObjectID = "zoi-8w-Ca0"; */
+"zoi-8w-Ca0.text" = "（占位）";
